@@ -1,31 +1,30 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# Minimal Text
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+Minimal Text is a clean and lightweight Jekyll Theme
 
-## Demo
+[![Buy on Gumroad](https://i.imgur.com/pCAI1tf.png)](https://wkmn.gumroad.com/l/uobbk)
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+## Documentation
 
-The main page would look like this:
+__Baseurl__
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+```yaml
+---
+title: Minimal Text
+baseurl: "/Minimal-Text"
+```
+The site baseurl is prepended to asset links and the home button in the `post.html` layout. Please note it must start with a "/"
+By changing this you are changing the location of your website. gh.clarkhacks.com`/Minimal-Text` is the location of Minimal-Text in my case.
 
-The post page would look like this:
+__Pagination__
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+```yaml
+paginate: 5
+paginate_path: "/:num/"
+```
+`paginate` in `_config.yml` is the number of post blocks that will appear on a single page.
+`paginate_path` is at what location your blog pages will be displayed.
 
-## Features
+__The documentation has been implemented because of user questions.__ For more documentation to be please request what you need defined.
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
-
-## Installation:
-
-Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
-
-## License
-
-GNU General Public License v3.0
+![screenshot](screenshot.jpg)
