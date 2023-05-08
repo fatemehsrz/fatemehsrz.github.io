@@ -279,14 +279,12 @@
             <i class= "fa fa-chevron-circle-right"></i>
                  
                I have visited Barcelona, Zurich, Paris, Lyon, 
-               
                <a href ="https://en.wikipedia.org/wiki/Nice"> Nice</a>, 
                <a href =" https://de.wikipedia.org/wiki/Biarritz"> Biarritz</a>, 
                <a href ="https://en.wikipedia.org/wiki/Limassol"> Limassol</a>, 
                <a href =" https://en.wikipedia.org/wiki/Lake_Garda"> Garda</a>, 
                <a href ="https://de.wikipedia.org/wiki/Chiemsee">Chiemsee</a>,
-               <a href ="https://en.wikipedia.org/wiki/Shiraz"> Shiraz</a>, 
-               <a href =" https://en.wikipedia.org/wiki/Baneh"> Baneh</a>, and many more.   
+               <a href ="https://en.wikipedia.org/wiki/Shiraz"> Shiraz</a>, and many more.   
                
                 <br>
                 
@@ -346,12 +344,26 @@
         
         
     
-  <div>
-  
- <a href='http://www.freevisitorcounters.com'>Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=8a46da0842db71b036552d6af90ca49b3cbd0c90'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1027090/t/0"></script>
-
+<div id="CounterVisitor">
 </div>
+
+<script>
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+
+</script>
         
         
         
