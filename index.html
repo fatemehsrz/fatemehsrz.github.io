@@ -388,32 +388,7 @@
             <tr>
             <td style="padding:20px;width:100%; vertical-align:left; text-align:left">
             
-            
-            <p><a id="link1" href="https://www.amazon.de/-/en/Viktor-Frankl/dp/080700555X">Click Here</a></p>
-		<script type = "text/javascript" >
-		
-		var link1 = document.getElementById("link1");
-		if (typeof window.addEventListener != "undefined") {
-		    link1.addEventListener("click",handleclick,false);
-		} else {
-		    link1.attachEvent("onclick",handleclick);
-		}
-		</script>
-            
-         
-      <p><a id="link1" href="https://www.amazon.de/-/en/Viktor-Frankl/dp/080700555X">Click Here</a></p>
-		<script type = "text/javascript" >
-		
-      var count = 0;
-      var button = document.getElementById("link1");
-      var countDisplay = document.getElementById("count");
-      button.addEventListener("click", (function(count) {
-         return function() {
-            count++;
-            countDisplay.innerHTML = count;
-         }
-      })(count));
-      </script>
+           
       
             </td>
           </tr>
@@ -421,10 +396,21 @@
         </tbody></table>       
  
 
+    <p><a id="link1" href="https://www.amazon.de/-/en/Viktor-Frankl/dp/080700555X">Click Here</a></p>
+    
+    
+<script>
 
+var button = document.getElementById("link1"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  
+};
 
-               
-            
+"Click me: " + count;
+          
+ </script>           
     
       
 
