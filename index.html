@@ -396,27 +396,42 @@
         </tbody></table>       
  
 
-    <p><a id="link1" href="https://www.amazon.de/-/en/Viktor-Frankl/dp/080700555X">Click Here</a></p>
-    
-    
-<script>
+<p><a id="link1" href="https://www.amazon.de/-/en/Viktor-Frankl/dp/080700555X">Click Here</a></p>
 
-var button = document.getElementById("link1"),
-  count = 0;
-button.onclick = function() {
-  count += 1;
-  
-};
+<script type = "text/javascript">
 
-"Click me: " + count;
+
+var click=0;
+function ClickCounter(){ 
+click=click+1;
+document.getElementById("link1").innerHTML=click;
+
+}
           
  </script>           
     
+  <div onclick= "ClickCounter()"> <span  id= "link1">  </span>  </div>     
       
-
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-</script>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
