@@ -30,21 +30,21 @@ h6 {
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 7rem;
+  line-height: 6.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
+  font-size: 2.15rem;
+  font-weight: 500;
 }
 
 .subheading {
